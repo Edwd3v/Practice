@@ -1,11 +1,10 @@
 
-# Escriba un programa que permita crear una lista de palabras y que, a continuación, cree una segunda lista igual a la primera, pero al revés (no se trata de escribir la lista al revés, sino de crear una lista distinta).
+# Escriba un programa que permita crear una lista de palabras y que, a continuación, elimine los elementos repetidos (dejando únicamente el primero de los elementos repetidos).
 
 def run():
 
     num_list = int(input('Dígame cuántas palabras tiene la lista: '))
     strings_list = []
-    invers_string_list = []
         
     if num_list <= 0:
         print('¡Imposible!')
@@ -19,9 +18,13 @@ def run():
     print('La lista creada es: {}'.format(strings_list))
 
     for i in reversed(strings_list):
-        invers_string_list.append(i)
+        # print(strings_list.index(i))
+        if strings_list.count(i) > 1:
+            strings_list.remove(i)
+            #print(i)'''
+
+    print('La lista sin repeticiones es: {}'.format(strings_list))
     
-    print('La lista inversa es: {}'.format(invers_string_list))
 
 if __name__ == '__main__':
     run()
