@@ -61,6 +61,22 @@ def run():
             set_elements_alone_list_1 = set(elements_alone_list_1)
             list_elements_alone_list_1 = list(set_elements_alone_list_1)
     print('Palabras que sólo aparecen en la primera lista: {}'.format(list_elements_alone_list_1))
+    
+    # Lista de palabras que aparecen en la segunda lista, pero no en la primera.
+    elements_alone_list_2 = []
+    for i in strings_list_2:
+        if not i in strings_list_1:
+            elements_alone_list_2.append(i)
+            set_elements_alone_list_2 = set(elements_alone_list_2)
+            list_elements_alone_list_2 = list(set_elements_alone_list_2)
+    print('Palabras que sólo aparecen en la segunda lista: {}'.format(list_elements_alone_list_2))
+
+    # Lista de palabras que aparecen en ambas listas.
+    list_with_all_elements = strings_list_1 + strings_list_2
+    list_with_all_elements = set(list_with_all_elements)
+    list_with_all_elements = list(list_with_all_elements)
+    print('Todas las palabras de las dos listas: {}'.format(list_with_all_elements))
+
 
 if __name__ == '__main__':
     run()
