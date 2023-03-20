@@ -21,7 +21,6 @@ def run():
         print(list_string)
         print('La lista de invertida es {}'.format(invers_list_string)) 
     
-
     invers_strings()
 
 if __name__ == '__main__':
