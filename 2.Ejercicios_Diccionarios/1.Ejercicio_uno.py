@@ -28,8 +28,8 @@ def run():
 
     print(
         '''
-    El simbolo de tu divisa es: {}
-        '''.format(divisa[your_divisa]))
+    El simbolo del {} es: {}
+        '''.format(your_divisa, divisa[your_divisa]))
 
     #print('El simbolo de tu divisa es: {}'.format(divisa.get[your_divisa]))
     #print('El simbolo de tu divisa es: {}'.format(divisa.get[your_divisa]))
