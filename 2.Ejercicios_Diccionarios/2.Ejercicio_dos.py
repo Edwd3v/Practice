@@ -26,9 +26,8 @@ def run():
 
     print('Su nombre es {}, tiene {} años, vive en {}, y su numero de telefono es {}'.format(user_information['name'], user_information['age'], user_information['address'], user_information['tel'] ))
 
+    # Otra manera de hacer print, esta facilita la lectura del codigo.
     print(f"Su nombre es {user_information['name']}, tiene {user_information['age']} años, vive en {user_information['address']}, y su numero de telefono es {user_information['tel']} ")
-
-    print(user_information)
 
 if __name__ == '__main__':
     run()

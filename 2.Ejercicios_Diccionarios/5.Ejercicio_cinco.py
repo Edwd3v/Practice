@@ -18,6 +18,5 @@ def run():
         credits += topics[topic]
     print(f'El total de creditos es de {credits}')
 
-
 if __name__ == '__main__':
     run()
