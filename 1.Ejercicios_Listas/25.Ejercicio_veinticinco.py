@@ -7,11 +7,11 @@ def run():
     string_5 = []
 
     # Manera larga de representar la lista 
-    for word in words:
-        if len(word) > 4:
-            string_5.append(word)
+    #for word in words:
+    #    if len(word) > 4:
+    #        string_5.append(word)
     
-    print(string_5)
+    #print(string_5)
 
     # short mode
     string_51 = [word for word in words if len(word) > 4]

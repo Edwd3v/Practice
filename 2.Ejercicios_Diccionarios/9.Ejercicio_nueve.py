@@ -64,7 +64,7 @@ def run ():
                     sum_values_invoices = sum(invoices.values())
                     print('TOTAL TO PAY: $', sum_values_invoices)
 
-            elif action == '4' or action == 'FINISH':
+           elif action == '4' or action == 'FINISH':
                 sum_values_invoices = sum(invoices.values())
                 print(invoices)
                 print('TOTAL TO PAY: $', sum_values_invoices)
