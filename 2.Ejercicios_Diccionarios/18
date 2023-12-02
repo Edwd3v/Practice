@@ -1,0 +1,57 @@
+
+'''
+Crea una programa de Login que compruebe el usuario y contraseña en el diccionario a continuación:
+El usuario tendrá un máximo de 3 intentos, y al acceder correctamente se mostrará el nombre y apellido del usuario.
+'''
+
+usuarios = {  
+    "user0001": {  
+    "nombre": "Iñaki",
+    "apellido": "Perurena",
+    "password": "123123"  
+    },  
+    "user0002": {  
+    "nombre": "Fermín",
+    "apellido": "Muguruza",
+    "password": "654321"  
+    },  
+    "user003": {  
+    "nombre": "Aimar",  
+    "apellido": "Olaizola",  
+    "password": "123456"  
+    }  
+    }
+
+name = input("NAME: ")
+
+user_find = None
+password_fine = None
+
+for key, value in usuarios.items():
+    if value.get("nombre") == name:
+        user_find = key
+        print("Usuario encontrado!!!")
+        password = input("PASSWORD: ")
+          
+
+'''
+for key, value in usuarios.items():
+    if name in value:
+        password = input("PASSWORD: ")
+'''
+
+#count = 0
+#while 
+
+'''
+print(usuarios[list(usuarios.keys())[0]])
+print(usuarios[list(usuarios.keys())[1]])
+print(usuarios[list(usuarios.keys())[2]])
+'''
+
+'''for clave, valor in usuarios.items():
+    print(f"Usuario: {clave}")
+    for atributo, dato in valor.items():
+        print(f"  {atributo}: {dato}")
+    print()
+'''
